@@ -16,5 +16,16 @@ namespace TransportApp
         {
             InitializeComponent();
         }
+
+        private void ButtonSchliessen_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void NaheStationen_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Hauptmenu hauptmenu = new Hauptmenu();
+            hauptmenu.Show();
+        }
     }
 }

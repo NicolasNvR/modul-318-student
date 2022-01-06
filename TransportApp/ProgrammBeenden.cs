@@ -10,22 +10,24 @@ using System.Windows.Forms;
 
 namespace TransportApp
 {
-    public partial class NavigationzurStation : Form
+    public partial class ProgrammBeenden : Form
     {
-        public NavigationzurStation()
+        public ProgrammBeenden()
         {
             InitializeComponent();
         }
 
-        private void ButtonSchliessen_Click(object sender, EventArgs e)
-        {;
+        private void ButtonJa_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
 
-        private void NavigationzurStation_FormClosed(object sender, FormClosedEventArgs e)
+        private void ButtonNein_Click(object sender, EventArgs e)
         {
             Hauptmenu hauptmenu = new Hauptmenu();
             hauptmenu.Show();
+            this.Close();
+            
         }
     }
 }
