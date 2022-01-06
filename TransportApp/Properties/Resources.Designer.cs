@@ -63,6 +63,16 @@ namespace TransportApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _59417 {
+            get {
+                object obj = ResourceManager.GetObject("59417", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background {
             get {
                 object obj = ResourceManager.GetObject("background", resourceCulture);
@@ -86,6 +96,16 @@ namespace TransportApp.Properties {
         internal static System.Drawing.Bitmap HomeIcon2 {
             get {
                 object obj = ResourceManager.GetObject("HomeIcon2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HomeIcon21 {
+            get {
+                object obj = ResourceManager.GetObject("HomeIcon21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -17,11 +17,6 @@ namespace TransportApp
             InitializeComponent();
         }
 
-        private void ButtonSchliessen_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void VerbindungenSuchen_FormClosed(object sender, FormClosedEventArgs e)
         {
             Hauptmenu hauptmenu = new Hauptmenu();
@@ -31,6 +26,11 @@ namespace TransportApp
         private void ButtonWiderholen_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

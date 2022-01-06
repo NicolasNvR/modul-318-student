@@ -19,7 +19,9 @@ namespace TransportApp
 
         private void ButtonJa_Click(object sender, EventArgs e)
         {
+            Hauptmenu hauptmenu = new Hauptmenu();
             this.Close();
+            hauptmenu.Close();
         }
 
         private void ButtonNein_Click(object sender, EventArgs e)
