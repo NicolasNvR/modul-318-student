@@ -8,15 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TransportApp
+namespace SwissTransportApp
 {
-    public partial class Hauptseite : Form
+    public partial class NaheStationen : Form
     {
-        public Hauptseite()
+        public NaheStationen()
         {
             InitializeComponent();
         }
-
-
     }
 }

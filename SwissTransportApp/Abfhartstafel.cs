@@ -8,15 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TransportApp
+namespace SwissTransportApp
 {
-    public partial class Hauptseite : Form
+    public partial class Abfhartstafel : Form
     {
-        public Hauptseite()
+        public Abfhartstafel()
         {
             InitializeComponent();
         }
 
-
+        private void Abfhartstafel_Leave(object sender, EventArgs e)
+        {
+            Hauptmenu hauptmenu = new Hauptmenu();
+            hauptmenu.Show();
+        }
     }
 }
