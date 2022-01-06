@@ -1,4 +1,4 @@
-﻿namespace SwissTransportApp
+﻿namespace TransportApp
 {
     partial class NavigationzurStation
     {
@@ -33,17 +33,17 @@
             // 
             // ButtonSchlissen
             // 
-            this.ButtonSchlissen.Location = new System.Drawing.Point(557, 390);
+            this.ButtonSchlissen.Location = new System.Drawing.Point(419, 278);
             this.ButtonSchlissen.Name = "ButtonSchlissen";
-            this.ButtonSchlissen.Size = new System.Drawing.Size(123, 29);
-            this.ButtonSchlissen.TabIndex = 0;
+            this.ButtonSchlissen.Size = new System.Drawing.Size(108, 27);
+            this.ButtonSchlissen.TabIndex = 1;
             this.ButtonSchlissen.Text = "Schliessen";
             this.ButtonSchlissen.UseVisualStyleBackColor = true;
             this.ButtonSchlissen.Click += new System.EventHandler(this.ButtonSchlissen_Click);
             // 
             // NavigationzurStation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.ButtonSchlissen);
@@ -55,6 +55,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button ButtonSchlissen;
+        private Button ButtonSchlissen;
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SwissTransportApp
+namespace TransportApp
 {
     public partial class NavigationzurStation : Form
     {
@@ -17,8 +17,14 @@ namespace SwissTransportApp
             InitializeComponent();
         }
 
-
         private void ButtonSchlissen_Click(object sender, EventArgs e)
+        {
+            Hauptmenu hauptmenu = new Hauptmenu();
+            hauptmenu.Show();
+            this.Close();
+        }
+
+        private void NavigationzurStation_FormClosed(object sender, FormClosedEventArgs e)
         {
             Hauptmenu hauptmenu = new Hauptmenu();
             hauptmenu.Show();

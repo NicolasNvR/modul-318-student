@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SwissTransportApp
+namespace TransportApp
 {
     public partial class NaheStationen : Form
     {

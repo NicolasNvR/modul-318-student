@@ -1,23 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace SwissTransportApp
+namespace TransportApp
 {
     public partial class Hauptmenu : Form
     {
         public Hauptmenu()
         {
             InitializeComponent();
-            ITransport transport = new Transport();
         }
-
         private void ButtonVerbindungSuchen_Click(object sender, EventArgs e)
         {
             VerbindungenSuchen verbindungenSuchen = new VerbindungenSuchen();
@@ -30,7 +18,7 @@ namespace SwissTransportApp
             abfhartstafel.Show();
         }
 
-        private void ButtonStationinderNähe_Click(object sender, EventArgs e)
+        private void ButtonStationinderN�he_Click(object sender, EventArgs e)
         {
             NaheStationen naheStationen = new NaheStationen();
             naheStationen.Show();
@@ -43,6 +31,5 @@ namespace SwissTransportApp
             this.Hide();
         }
 
-        
     }
 }
