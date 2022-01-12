@@ -62,5 +62,14 @@
 
             connections.Should().NotBeNull();
         }
+        [Fact]
+        public void ConnectionsWithTime()
+        {
+            Connections connections = this.testee.GetConnections("Sursee", "Luzern", DateTime.Now);
+
+
+
+            connections.Should().NotBeNull();
+        }
     }
 }
