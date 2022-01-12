@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.LabelAbfahrtsstation = new System.Windows.Forms.Label();
+            this.LabelAbfahrtstation = new System.Windows.Forms.Label();
             this.LabelEndstation = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PictureBoxWiederholen = new System.Windows.Forms.PictureBox();
             this.DataGridVerbindungenSuchen = new System.Windows.Forms.DataGridView();
             this.ColumnVerkehrsmittel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,13 +42,15 @@
             this.ColumnDauer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnVerspätung = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ButtonVerbindungenSuchen = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.DateTimer = new System.Windows.Forms.DateTimePicker();
+            this.ComboBoxAbfahrtstation = new System.Windows.Forms.ComboBox();
+            this.ComboBoxEndstation = new System.Windows.Forms.ComboBox();
+            this.PictureBoxHome = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMailButton = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxWiederholen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridVerbindungenSuchen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMailButton)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList1
@@ -57,16 +59,16 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // LabelAbfahrtsstation
+            // LabelAbfahrtstation
             // 
-            this.LabelAbfahrtsstation.AutoSize = true;
-            this.LabelAbfahrtsstation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LabelAbfahrtsstation.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LabelAbfahrtsstation.Location = new System.Drawing.Point(27, 28);
-            this.LabelAbfahrtsstation.Name = "LabelAbfahrtsstation";
-            this.LabelAbfahrtsstation.Size = new System.Drawing.Size(155, 30);
-            this.LabelAbfahrtsstation.TabIndex = 2;
-            this.LabelAbfahrtsstation.Text = "Abfahrtssation";
+            this.LabelAbfahrtstation.AutoSize = true;
+            this.LabelAbfahrtstation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LabelAbfahrtstation.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LabelAbfahrtstation.Location = new System.Drawing.Point(27, 28);
+            this.LabelAbfahrtstation.Name = "LabelAbfahrtstation";
+            this.LabelAbfahrtstation.Size = new System.Drawing.Size(154, 30);
+            this.LabelAbfahrtstation.TabIndex = 2;
+            this.LabelAbfahrtstation.Text = "Abfahrtstation";
             // 
             // LabelEndstation
             // 
@@ -79,15 +81,16 @@
             this.LabelEndstation.TabIndex = 3;
             this.LabelEndstation.Text = "Endstation";
             // 
-            // pictureBox1
+            // PictureBoxWiederholen
             // 
-            this.pictureBox1.Image = global::TransportApp.Properties.Resources._59417;
-            this.pictureBox1.Location = new System.Drawing.Point(217, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(70, 74);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.PictureBoxWiederholen.Image = global::TransportApp.Properties.Resources._59417;
+            this.PictureBoxWiederholen.Location = new System.Drawing.Point(217, 28);
+            this.PictureBoxWiederholen.Name = "PictureBoxWiederholen";
+            this.PictureBoxWiederholen.Size = new System.Drawing.Size(69, 66);
+            this.PictureBoxWiederholen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBoxWiederholen.TabIndex = 4;
+            this.PictureBoxWiederholen.TabStop = false;
+            this.PictureBoxWiederholen.Click += new System.EventHandler(this.ButtonWiderholen_Click);
             // 
             // DataGridVerbindungenSuchen
             // 
@@ -107,7 +110,7 @@
             this.DataGridVerbindungenSuchen.Location = new System.Drawing.Point(12, 193);
             this.DataGridVerbindungenSuchen.Name = "DataGridVerbindungenSuchen";
             this.DataGridVerbindungenSuchen.RowTemplate.Height = 25;
-            this.DataGridVerbindungenSuchen.Size = new System.Drawing.Size(776, 245);
+            this.DataGridVerbindungenSuchen.Size = new System.Drawing.Size(743, 245);
             this.DataGridVerbindungenSuchen.TabIndex = 5;
             // 
             // ColumnVerkehrsmittel
@@ -147,67 +150,87 @@
             // 
             // ButtonVerbindungenSuchen
             // 
-            this.ButtonVerbindungenSuchen.Location = new System.Drawing.Point(521, 56);
+            this.ButtonVerbindungenSuchen.Location = new System.Drawing.Point(519, 78);
             this.ButtonVerbindungenSuchen.Name = "ButtonVerbindungenSuchen";
             this.ButtonVerbindungenSuchen.Size = new System.Drawing.Size(137, 23);
             this.ButtonVerbindungenSuchen.TabIndex = 6;
             this.ButtonVerbindungenSuchen.Text = "Verbindungen Suchen";
             this.ButtonVerbindungenSuchen.UseVisualStyleBackColor = true;
+            this.ButtonVerbindungenSuchen.Click += new System.EventHandler(this.ButtonVerbindungenSuchen_Click);
             // 
-            // dateTimePicker2
+            // DateTimer
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(12, 150);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
-            this.dateTimePicker2.TabIndex = 7;
+            this.DateTimer.CalendarTrailingForeColor = System.Drawing.Color.Gray;
+            this.DateTimer.Cursor = System.Windows.Forms.Cursors.Default;
+            this.DateTimer.CustomFormat = "MM-dd-yyyy / hh:mm";
+            this.DateTimer.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DateTimer.Location = new System.Drawing.Point(27, 151);
+            this.DateTimer.Name = "DateTimer";
+            this.DateTimer.Size = new System.Drawing.Size(154, 23);
+            this.DateTimer.TabIndex = 7;
             // 
-            // comboBox1
+            // ComboBoxAbfahrtstation
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(27, 79);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(155, 23);
-            this.comboBox1.TabIndex = 8;
+            this.ComboBoxAbfahrtstation.FormattingEnabled = true;
+            this.ComboBoxAbfahrtstation.Location = new System.Drawing.Point(27, 79);
+            this.ComboBoxAbfahrtstation.Name = "ComboBoxAbfahrtstation";
+            this.ComboBoxAbfahrtstation.Size = new System.Drawing.Size(155, 23);
+            this.ComboBoxAbfahrtstation.TabIndex = 8;
+            this.ComboBoxAbfahrtstation.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ComboBoxAbfahrtstation_KeyUp);
             // 
-            // comboBox2
+            // ComboBoxEndstation
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(326, 79);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(155, 23);
-            this.comboBox2.TabIndex = 9;
+            this.ComboBoxEndstation.FormattingEnabled = true;
+            this.ComboBoxEndstation.Location = new System.Drawing.Point(326, 79);
+            this.ComboBoxEndstation.Name = "ComboBoxEndstation";
+            this.ComboBoxEndstation.Size = new System.Drawing.Size(155, 23);
+            this.ComboBoxEndstation.TabIndex = 9;
+            this.ComboBoxEndstation.KeyUp += new System.Windows.Forms.KeyEventHandler(this.ComboBoxEndstation_KeyUp_1);
             // 
-            // pictureBox2
+            // PictureBoxHome
             // 
-            this.pictureBox2.Image = global::TransportApp.Properties.Resources.HomeIcon21;
-            this.pictureBox2.Location = new System.Drawing.Point(708, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 67);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.PictureBoxHome.Image = global::TransportApp.Properties.Resources.HomeIcon21;
+            this.PictureBoxHome.Location = new System.Drawing.Point(708, 12);
+            this.PictureBoxHome.Name = "PictureBoxHome";
+            this.PictureBoxHome.Size = new System.Drawing.Size(80, 67);
+            this.PictureBoxHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PictureBoxHome.TabIndex = 10;
+            this.PictureBoxHome.TabStop = false;
+            this.PictureBoxHome.Click += new System.EventHandler(this.PictureBoxHome_Click);
+            // 
+            // pictureBoxMailButton
+            // 
+            this.pictureBoxMailButton.Image = global::TransportApp.Properties.Resources.Mailicon__2_;
+            this.pictureBoxMailButton.Location = new System.Drawing.Point(708, 97);
+            this.pictureBoxMailButton.Name = "pictureBoxMailButton";
+            this.pictureBoxMailButton.Size = new System.Drawing.Size(80, 63);
+            this.pictureBoxMailButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxMailButton.TabIndex = 11;
+            this.pictureBoxMailButton.TabStop = false;
+            this.pictureBoxMailButton.Click += new System.EventHandler(this.PictureBoxMailButton_Click);
             // 
             // VerbindungenSuchen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.pictureBoxMailButton);
+            this.Controls.Add(this.PictureBoxHome);
+            this.Controls.Add(this.ComboBoxEndstation);
+            this.Controls.Add(this.ComboBoxAbfahrtstation);
+            this.Controls.Add(this.DateTimer);
             this.Controls.Add(this.ButtonVerbindungenSuchen);
             this.Controls.Add(this.DataGridVerbindungenSuchen);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PictureBoxWiederholen);
             this.Controls.Add(this.LabelEndstation);
-            this.Controls.Add(this.LabelAbfahrtsstation);
+            this.Controls.Add(this.LabelAbfahrtstation);
             this.Name = "VerbindungenSuchen";
             this.Text = "VerbindungenSuchen";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VerbindungenSuchen_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxWiederholen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridVerbindungenSuchen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMailButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,9 +239,9 @@
         #endregion
         private DateTimePicker dateTimePicker1;
         private ImageList imageList1;
-        private Label LabelAbfahrtsstation;
+        private Label LabelAbfahrtstation;
         private Label LabelEndstation;
-        private PictureBox pictureBox1;
+        private PictureBox PictureBoxWiederholen;
         private DataGridView DataGridVerbindungenSuchen;
         private DataGridViewTextBoxColumn ColumnVerkehrsmittel;
         private DataGridViewTextBoxColumn ColumnNummer;
@@ -228,9 +251,10 @@
         private DataGridViewTextBoxColumn ColumnDauer;
         private DataGridViewTextBoxColumn ColumnVerspätung;
         private Button ButtonVerbindungenSuchen;
-        private DateTimePicker dateTimePicker2;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private PictureBox pictureBox2;
+        private ComboBox ComboBoxAbfahrtstation;
+        private ComboBox ComboBoxEndstation;
+        private PictureBox PictureBoxHome;
+        public DateTimePicker DateTimer;
+        private PictureBox pictureBoxMailButton;
     }
 }

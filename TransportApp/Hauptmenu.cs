@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
+﻿
 namespace TransportApp
 {
     public partial class Hauptmenu : Form
@@ -26,9 +17,7 @@ namespace TransportApp
 
         private void ButtonNavigationzurStation_Click(object sender, EventArgs e)
         {
-            NavigationzurStation navigationzurStation = new NavigationzurStation();
-            navigationzurStation.Show();
-            this.Hide();
+            MessageBox.Show("Dieses Feature wurde noch nicht implementiert");
         }
 
         private void ButtonAbfhartstafel_Click(object sender, EventArgs e)
