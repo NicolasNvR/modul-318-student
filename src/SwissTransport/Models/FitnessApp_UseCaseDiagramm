@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-31T09:12:27.156Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="BGdXhQaFCeinVFS5k0ID" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-31T09:14:42.563Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="fbW-eMkASeldYknp48ue" version="20.2.7" type="github">
   <diagram id="lYy-r8B6lBbdAfkKxWAa" name="Seite-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -90,7 +90,7 @@
         <mxCell id="n4Twi541ddd7eDhjIo0N-32" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;FitnessApp&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
           <mxGeometry x="550" y="110" width="70" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="n4Twi541ddd7eDhjIo0N-33" value="exclude" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+        <mxCell id="n4Twi541ddd7eDhjIo0N-33" value="extend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
           <mxGeometry x="280" y="540" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
