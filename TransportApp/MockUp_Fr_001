@@ -1,17 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2022-09-28T09:21:56.138Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="udEw9aQPZLedmUzVBPGu" version="20.3.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-28T11:32:10.330Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="511B8Vjgx8FqjfQeVCr-" version="20.3.3" type="github">
   <diagram id="wFE0QG_FPsp0jaGvCLVb" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="8fTgdLElp-xu80KfS37F-53" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="120" y="180" width="550" height="380" as="geometry" />
+        <mxCell id="8fTgdLElp-xu80KfS37F-53" value="" style="group;imageHeight=24;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="130" y="230" width="550" height="380" as="geometry" />
         </mxCell>
         <mxCell id="8fTgdLElp-xu80KfS37F-16" value="Hauptmenu" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#666666;mainText=;fontSize=17;labelBackgroundColor=none;" vertex="1" parent="8fTgdLElp-xu80KfS37F-53">
-          <mxGeometry width="550" height="380" as="geometry" />
+          <mxGeometry y="-10" width="550" height="380" as="geometry" />
         </mxCell>
         <mxCell id="8fTgdLElp-xu80KfS37F-48" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.rrect;rSize=10;fillColor=#ffffff;strokeColor=#666666;fontSize=18;" vertex="1" parent="8fTgdLElp-xu80KfS37F-53">
-          <mxGeometry x="10" y="40" width="450" height="30" as="geometry" />
+          <mxGeometry x="10" y="30" width="370" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8fTgdLElp-xu80KfS37F-49" value="&lt;font style=&quot;font-weight: normal; font-size: 13px;&quot;&gt;Einheitenanzeige&lt;/font&gt;" style="strokeColor=inherit;fillColor=inherit;gradientColor=inherit;strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.rrect;rSize=0;fontSize=17;fontColor=#666666;fontStyle=1;resizeHeight=1;" vertex="1" parent="8fTgdLElp-xu80KfS37F-48">
           <mxGeometry width="125" height="30" relative="1" as="geometry">
@@ -27,13 +27,13 @@
           <mxGeometry width="125" height="30" relative="1" as="geometry" />
         </mxCell>
         <mxCell id="8fTgdLElp-xu80KfS37F-17" value="Login" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#6c8ebf;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#dae8fc;whiteSpace=wrap;" vertex="1" parent="8fTgdLElp-xu80KfS37F-53">
-          <mxGeometry x="360" y="160" width="80" height="30" as="geometry" />
+          <mxGeometry x="410" y="30" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8fTgdLElp-xu80KfS37F-45" value="El Fitness App" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="8fTgdLElp-xu80KfS37F-53">
-          <mxGeometry x="50" y="80" width="100" height="40" as="geometry" />
+          <mxGeometry x="80" y="80" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="8fTgdLElp-xu80KfS37F-19" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.containers.userMale;strokeColor=#666666;strokeColor2=#008cff;" vertex="1" parent="1">
-          <mxGeometry x="710" y="226" width="30" height="24" as="geometry" />
+        <mxCell id="8fTgdLElp-xu80KfS37F-19" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.containers.userMale;strokeColor=#666666;strokeColor2=#008cff;" vertex="1" parent="8fTgdLElp-xu80KfS37F-53">
+          <mxGeometry x="510" y="33" width="30" height="24" as="geometry" />
         </mxCell>
         <mxCell id="8fTgdLElp-xu80KfS37F-47" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="130" y="650" width="500" height="380" as="geometry" />
